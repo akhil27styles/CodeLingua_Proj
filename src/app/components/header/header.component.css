@@ -1,0 +1,76 @@
+
+/* Set the color of the navigation bar */
+.navbar {
+  background-color: #5A5A5A;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+}
+
+/* Set the color of the text in the navigation bar */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.header-icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.material-symbols-outlined {
+  font-size: 32px;
+  color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+input[type="checkbox"] {
+	visibility: hidden;
+	&:checked + label {
+		transform: rotate(360deg);
+		background-color: #000;
+		&:before {
+			transform: translateX(30px);
+			background-color: #FFF;
+		}
+	}
+}
+
+label {
+  display: block;
+	width: 75px;
+	height: 40px;
+	border: 6px solid;
+	border-radius: 99em;
+	position: relative;
+	transition: transform .75s ease-in-out;
+	transform-origin: 50% 50%;
+	cursor: pointer;
+	
+	&:before {
+		transition: transform .75s ease;
+		transition-delay: .5s;
+		content: "";
+		display: block;
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		background-color: #000;
+		border-radius: 50%;
+		top: 5px;
+		left: 5px;
+	}
+}
+.toogle-section{
+  width: 8%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.light{
+  top: 30px;
+}

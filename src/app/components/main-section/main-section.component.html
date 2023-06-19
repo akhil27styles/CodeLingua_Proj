@@ -1,0 +1,15 @@
+<!-- Main Content -->
+
+<div>
+  <div class="main">
+    <button class="button-30" role="button" (click)="toggle('translate')"  [ngClass]="{'selected': buttonColor === 'translate'}">Code Translate</button>
+     &nbsp;&nbsp;&nbsp;
+        <button class="button-30" role="button" (click)="toggle('migration')"  [ngClass]="{'selected': buttonColor === 'migration'}">Code Migration</button>
+  </div>
+  <div *ngIf="showComponentOne">
+    <app-code-translate [theme]="theme"></app-code-translate>
+  </div>
+  <div *ngIf="!showComponentOne">
+    <app-code-migration [theme]="theme"></app-code-migration>
+  </div>
+</div>
